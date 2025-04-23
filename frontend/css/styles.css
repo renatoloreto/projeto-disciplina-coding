@@ -1,45 +1,55 @@
 body {
-    font-family: 'Merriweather', serif; /* Uma fonte serifada clássica para livros */
+    font-family: 'Merriweather', serif;
     margin: 0;
     padding: 20px;
-    background-color: #f4f1de; /* Um bege suave, cor de papel antigo */
-    color: #333; /* Texto mais escuro para boa leitura */
-    line-height: 1.6; /* Melhora a legibilidade do texto */
+    background-color: #f4f1de; 
+    color: #333; 
+    line-height: 1.6; 
+}
+
+#app {
+    max-width: 480px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
 }
 
 .container {
-    background: #fffafa; /* Branco suave, como páginas de livro */
-    padding: 30px; /* Aumentei o padding interno */
-    border-radius: 10px; /* Bordas mais arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
-    max-width: 800px; /* Aumentei a largura máxima para mais conteúdo */
-    margin: 30px auto; /* Aumentei a margem superior e inferior */
+    background: #fffafa; 
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    margin: 30px auto; 
 }
 
 h1, h2 {
-    color: #283618; /* Verde escuro, tom de encadernação */
+    color: #283618; 
     text-align: center;
-    margin-bottom: 25px; /* Mais espaço abaixo dos títulos */
-    letter-spacing: 0.5px; /* Pequeno espaçamento entre letras para elegância */
+    margin-bottom: 25px; 
+    letter-spacing: 0.5px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 25px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra suave na tabela */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 table, th, td {
-    border: 1px solid #a3b18a; /* Verde mais claro para as bordas da tabela */
+    border: 1px solid #a3b18a;
 }
 
 th {
-    background-color: #dad7cd; /* Cinza claro, tom de papel */
-    color: #588157; /* Verde médio para o cabeçalho */
+    background-color: #dad7cd;
+    color: #588157;
     padding: 12px;
     text-align: left;
-    font-weight: bold; /* Enfatizar o cabeçalho */
+    font-weight: bold;
 }
 
 td {
@@ -48,44 +58,42 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: #f0ead6; /* Uma cor de fundo levemente diferente para as linhas pares */
+    background-color: #f0ead6;
 }
 
-button.btn-primary { /* Estilizando os botões primários do Bootstrap */
+button.btn-primary {
     padding: 12px 20px;
-    background-color: #588157; /* Verde médio */
+    background-color: #588157;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease; /* Transição suave no hover */
+    transition: background-color 0.3s ease; 
 }
 
 button.btn-primary:hover {
-    background-color: #344e41; /* Verde escuro no hover */
-}
+    background-color: #344e41; 
 
-/* Menu de navegação */
 .navbar {
-    background-color: #344e41; /* Verde escuro, cor de encadernação */
+    background-color: #344e41; 
     overflow: hidden;
-    border-radius: 5px; /* Bordas levemente arredondadas */
-    margin-bottom: 20px; /* Espaço abaixo da navegação */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil na navegação */
+    border-radius: 5px; 
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand {
     display: inline-block;
-    color: #f4f1de; /* Bege claro para o texto/ícone da marca */
+    color: #f4f1de;
     padding: 14px 20px;
     text-decoration: none;
-    font-weight: bold; /* Enfatizar a marca */
-    font-size: 1.8em; /* Aumentar um pouco o tamanho da fonte */
+    font-weight: bold;
+    font-size: 1.8em;
 }
 
 .navbar-brand i {
-    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    margin-right: 8px;
 }
 
 .navbar-nav {
@@ -101,7 +109,7 @@ button.btn-primary:hover {
 
 .nav-link {
     display: block;
-    color: #f4f1de; /* Bege claro para os links */
+    color: #f4f1de;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -109,28 +117,27 @@ button.btn-primary:hover {
 }
 
 .nav-link:hover {
-    background-color: #588157; /* Verde médio no hover */
+    background-color: #588157;
     color: white;
 }
 
 .nav-item.active .nav-link {
-    background-color: #588157; /* Verde médio para a página ativa */
+    background-color: #588157;
     color: white;
-    font-weight: bold; /* Enfatizar o link ativo */
+    font-weight: bold;
 }
 
-/* Estilo para o modal do Bootstrap */
 .modal {
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo mais escuro e um pouco mais opaco */
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-content {
-    background-color: #f0ead6; /* Cinza claro, tom de papel */
-    margin: 10% auto; /* Ajustei a margem superior */
-    padding: 30px; /* Mais padding interno */
+    background-color: #f0ead6; 
+    margin: 10% auto; 
+    padding: 30px;
     border-radius: 8px;
     width: 80%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .modal-header {
@@ -143,7 +150,7 @@ button.btn-primary:hover {
 }
 
 .modal-title {
-    color: #344e41; /* Verde escuro para o título do modal */
+    color: #344e41; 
     font-size: 1.8em;
 }
 
@@ -184,7 +191,7 @@ button.btn-primary:hover {
     font-size: 16px;
 }
 
-.btn-primary { /* Reaplicando para garantir a estilização nos modais */
+.btn-primary { 
     padding: 12px 20px;
     background-color: #588157;
     color: white;
@@ -199,7 +206,6 @@ button.btn-primary:hover {
     background-color: #344e41;
 }
 
-/* Estilos específicos para botões de ação na tabela */
 .editBookBtn, .deleteBookBtn, .editAuthorBtn, .deleteAuthorBtn {
     padding: 8px 12px;
     border-radius: 5px;
@@ -210,7 +216,7 @@ button.btn-primary:hover {
 }
 
 .editBookBtn, .editAuthorBtn {
-    background-color: #a3b18a; /* Verde claro para editar */
+    background-color: #a3b18a; 
     color: #333;
     border: 1px solid #a3b18a;
 }
@@ -220,7 +226,7 @@ button.btn-primary:hover {
 }
 
 .deleteBookBtn, .deleteAuthorBtn {
-    background-color: #e07a5f; /* Laranja/vermelho suave para deletar */
+    background-color: #e07a5f; 
     color: white;
     border: 1px solid #e07a5f;
 }
@@ -229,7 +235,6 @@ button.btn-primary:hover {
     opacity: 0.8;
 }
 
-/* Responsividade */
 @media screen and (max-width: 768px) {
     .container {
         padding: 20px;
@@ -268,6 +273,4 @@ button.btn-primary:hover {
         padding: 10px 15px;
     }
 }
-
-/* Fonte Merriweather (você precisará incluir isso no seu <head> ou via CSS) */
-/* <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet"> */
+}
