@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiUrl = 'http://localhost:3004/api'; // Atualize para sua API
-    const authorModalElement = document.getElementById('authorModal'); // Pegue o elemento DOM
-    const authorModal = $(authorModalElement); // Crie a instância jQuery do modal
+    const apiUrl = 'http://localhost:3004/api'; 
+    const authorModalElement = document.getElementById('authorModal'); 
+    const authorModal = $(authorModalElement); 
     const authorForm = document.getElementById('authorForm');
     const addAuthorBtn = document.getElementById('addAuthorBtn');
     const modalTitle = document.getElementById('modalTitle');
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tableBody.appendChild(row);
         });
 
-        // Adicionar eventos de edição e deleção (agora usando jQuery para consistência)
+        // Adicionar eventos de edição e deleção
         $('.editAuthorBtn').on('click', function() {
             openEditAuthorModal($(this).data('id'));
         });
@@ -80,9 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.getElementById('name').value = author.name;
         document.getElementById('profile').value = author.profile;
-        document.getElementById('password').value = ''; // Não exibir senha
+        document.getElementById('password').value = ''; 
 
-        authorModal.modal('show'); // Use a função do Bootstrap para exibir o modal
+        authorModal.modal('show'); 
     };
 
     // Abrir modal para adicionar novo autor
@@ -90,18 +90,18 @@ document.addEventListener('DOMContentLoaded', () => {
         editAuthorId = null;
         modalTitle.innerText = 'Adicionar Autor';
         authorForm.reset();
-        authorModal.modal('show'); // Use a função do Bootstrap para exibir o modal
+        authorModal.modal('show'); 
     };
 
     // Fechar modal ao clicar no "x" (já tratado pelo Bootstrap)
     document.querySelector('.close').addEventListener('click', () => {
-        authorModal.modal('hide'); // Use a função do Bootstrap para fechar o modal
+        authorModal.modal('hide'); 
     });
 
     // Fechar modal ao clicar fora dele (já tratado pelo Bootstrap)
     window.addEventListener('click', (event) => {
         if (event.target === authorModalElement) {
-            authorModal.modal('hide'); // Use a função do Bootstrap para fechar o modal
+            authorModal.modal('hide'); 
         }
     });
 
@@ -120,18 +120,9 @@ document.addEventListener('DOMContentLoaded', () => {
             await addAuthor(authorData);
         }
 
-        authorModal.modal('hide'); // Use a função do Bootstrap para fechar o modal
+        authorModal.modal('hide'); 
         loadAuthors();
     });
-
-    if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-            navigator.serviceWorker
-                .register("/frontend/service-worker.js")
-                .then(() => console.log("Service Worker registrado com sucesso!"))
-                .catch(err => console.log("Erro ao registrar Service Worker:", err));
-        });        
-    }
 
     // Inicializando o carregamento de usuários e eventos
     addAuthorBtn.addEventListener('click', openAddAuthorModal);

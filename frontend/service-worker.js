@@ -4,7 +4,7 @@ const urlsToCache = [
     '/frontend/index.html',
     '/frontend/books.html',
     '/frontend/css/styles.css',
-    '/backend/app.js',
+    '/frontend/js/author.js',
     '/frontend/manifest.json',
     '/frontend/icons/book-icon-192.png',
     '/frontend/icons/book-icon-512.png'

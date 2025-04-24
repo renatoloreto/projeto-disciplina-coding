@@ -20,7 +20,7 @@ mongoose.connect('mongodb+srv://rsaloreto:senac123@cluster0.ugdek6p.mongodb.net/
 }).catch(err => {
     console.log('Erro ao conectar ao MongoDB:', err);
 });
-// mongodb+srv://rsaloreto:senac123@cluster0.ugdek6p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
 // Usando rotas
 app.use('/api/authors', authorRoutes);
 app.use('/api/books', bookRoutes);
