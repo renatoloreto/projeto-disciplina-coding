@@ -1,18 +1,18 @@
 ## 📄 Cadastro de Autores e Livros
-Este é o front-end do sistema de Cadastro de Autores e Livros.
+Este é o front-end do sistema de Cadastro de Autores e Livros.  
 Ele foi desenvolvido para proporcionar uma interface de usuário intuitiva para interagir com o backend, permitindo a visualização e o gerenciamento de autores e livros cadastrados.
 
 ## 💻 Tecnologias Utilizadas
-HTML5
-CSS
-JavaScript
-Bootstrap
-manifest.json (funcionalidades de PWA)
+HTML5  
+CSS  
+JavaScript  
+Bootstrap  
+manifest.json (funcionalidades de PWA)  
 service-worker.js (para caching e funcionalidades offline)
 
 ## 🖊 Pré-requisitos
 
-Node.js e npm instalados.
+Node.js e npm instalados.  
 Um navegador web moderno.
 
 ## ✔ Execução do Frontend (acesso no navegador)
