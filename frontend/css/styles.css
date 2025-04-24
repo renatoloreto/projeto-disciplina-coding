@@ -45,11 +45,12 @@ table, th, td {
 }
 
 th {
-    background-color: #dad7cd;
-    color: #588157;
+    background-color: #648364;
+    color: #f9fcf9;
     padding: 12px;
     text-align: left;
     font-weight: bold;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 td {
