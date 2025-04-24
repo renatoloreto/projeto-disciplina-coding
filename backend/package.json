@@ -1,0 +1,23 @@
+{
+    "name": "books-management-api",
+    "version": "1.0.0",
+    "description": "API para gerenciamento de autores e livros",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "author": "Renato Loreto",
+    "license": "MIT",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "express": "^4.21.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^7.8.1",
+        "punycode": "^2.3.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    }
+}
