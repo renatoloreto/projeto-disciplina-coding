@@ -1,15 +1,15 @@
 ## 📄 Cadastro de Autores e Livros
-Este é o back-end do sistema de Cadastro de Autores e Livros.
+Este é o back-end do sistema de Cadastro de Autores e Livros.  
 É uma aplicação Node.js com Express e MongoDB, desenvolvida para o gerenciamento de autores e livros cadastrados.
 
 ## 💻 Tecnologias Utilizadas
-Node.js
-Express.js
+Node.js  
+Express.js  
 MongoDB Atlas (via Mongoose)
 
 ## 🖊 Pré-requisitos
 
-Node.js e npm instalados
+Node.js e npm instalados  
 Uma instância do MongoDB rodando localmente ou uma URI de conexão.
 
 ## ✔ Instalação
