@@ -1,13 +1,13 @@
 const CACHE_NAME = 'cadastro-livros-cache-v1';
 const urlsToCache = [
     '/',
-    '/frontend/index.html',
-    '/frontend/books.html',
-    '/frontend/css/styles.css',
-    '/frontend/js/author.js',
-    '/frontend/manifest.json',
-    '/frontend/icons/book-icon-192.png',
-    '/frontend/icons/book-icon-512.png'
+    './index.html',
+    './books.html',
+    './css/styles.css',
+    './js/author.js',
+    './manifest.json',
+    './icons/book-icon-192.png',
+    './icons/book-icon-512.png'
 ];
 
 self.addEventListener('install', event => {
